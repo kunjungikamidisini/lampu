@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center min-h-screen w-full bg-red-800 gap-4"
+    >
+      <!-- LAMPU RUANG TAMU -->
+      <div>
+        <h3 class="text-center text-xl font-semibold">LAMPU RUANG TAMU</h3>
+        <div class="flex justify-center space-x-6">
+          <!-- LAMPU RUANG TAMU 1 -->
+          <div
+            class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+          >
+
+            <img src="asset/images/off.gif" alt="" id="lampurt1" />
+            <label
+              for="default-togglert1"
+              class="inline-flex relative items-center cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="default-togglert1"
+                class="sr-only peer"
+                onchange="saklar()"
+              />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+          <!-- LAMPU RUANG TAMU 1 END -->
+          <!-- LAMPU RUANG TAMU 2 -->
+          <div
+            class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+          >
+            <img src="asset/images/off.gif" alt="" id="lampurt2" />
+            <label
+              for="default-togglert2"
+              class="inline-flex relative items-center cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="default-togglert2"
+                class="sr-only peer"
+                onchange="saklar()"
+              />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+          <!-- LAMPU RUANG TAMU 2 END -->
+        </div>
+      </div>
+
+      <!-- LAMPU DEPAN -->
+      <div>
+        <h3 class="text-center text-xl font-semibold">LAMPU DEPAN</h3>
+        <div class="flex justify-center space-x-6">
+          <!-- LAMPU DEPAN 1 -->
+          <div
+            class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+          >
+            <img src="asset/images/off.gif" alt="" id="lampud1" />
+            <label
+              for="default-toggled1"
+              class="inline-flex relative items-center cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="default-toggled1"
+                class="sr-only peer"
+                onchange="saklar()"
+              />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+          <!-- LAMPU DEPAN 1 END -->
+
+          <!-- LAMPU DEPAN 2 -->
+          <div
+            class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+          >
+            <img src="asset/images/off.gif" alt="" id="lampud2" />
+            <label
+              for="default-toggled2"
+              class="inline-flex relative items-center cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="default-toggled2"
+                class="sr-only peer"
+                onchange="saklar()"
+              />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+          <!-- LAMPU DEPAN 2 END -->
+        </div>
+      </div>
+      <!-- LAMPU DEPAN END -->
+
+      <!-- LAMPU TAMAN -->
+      <div>
+      <h3 class="text-center text-xl font-semibold">LAMPU TAMAN</h3>
+      <div class="flex justify-center space-x-6">
+        <!-- LAMPU TAMAN 1 -->
+        <div
+          class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+        >
+          <img src="asset/images/off.gif" alt="" id="lamput1" />
+          <label
+            for="default-togglet1"
+            class="inline-flex relative items-center cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              id="default-togglet1"
+              class="sr-only peer"
+              onchange="saklar()"
+            />
+            <div
+              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+            ></div>
+          </label>
+        </div>
+        <!-- LAMPU TAMAN 1 END -->
+
+        <!-- LAMPU TAMAN 2 -->
+        <div
+          class="flex flex-col justify-center items-center border border-gray-300 p-4 rounded-lg shadow-lg bg-white w-40"
+        >
+          <img src="asset/images/off.gif" alt="" id="lamput2" />
+          <label
+            for="default-togglet2"
+            class="inline-flex relative items-center cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              id="default-togglet2"
+              class="sr-only peer"
+              onchange="saklar()"
+            />
+            <div
+              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+            ></div>
+          </label>
+        </div>
+        <!-- LAMPU TAMAN 2 END -->
+      </div>
+    </div>
+      <!-- LAMPU TAMAN END -->
+    </div>
+
+    <!-- JAVA SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+  </body>
+</html>
